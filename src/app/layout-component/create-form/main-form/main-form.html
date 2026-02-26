@@ -1,0 +1,48 @@
+<div class="main-container">
+    <div class="form-stepper">
+        @for (step of steps; track step; let i = $index) {
+            <div class="step-wrapper">
+                <div class="step-circle" [class.active]="activeStep() === i" [class.completed]="activeStep() > i">
+                    {{i + 1}}
+                </div>
+                <div class="step-label" [class.active]="activeStep() === i">{{step}}</div>
+            </div>
+            @if (i < steps.length - 1) {
+                <div class="step-line" [class.active]="activeStep()-1 === i"></div>
+            }
+        }
+    </div>
+
+    <div class="form-content">
+        <h2 class="form-title">Form Type</h2>
+        <div class="type-cards">
+            @for (card of cardTypes; track $index) {
+            <div class="card" [class.selected]="selectedType() === card.label" (click)="selectCard(card.label)" tabindex="0"
+                role="button">
+                <img class="card-image" [src]="card.src" alt="{{card.label}}" />
+                <p class="card-text">{{card.label}}</p>
+            </div>
+            }
+        </div>
+        <hr class="hr-card">
+        <div class="main-section">
+            <div>
+               <img style="width: 125px; height: 100px;" src="assets/NoResults.png" alt="" />
+            </div>
+            <p class="card-text">Select a form type to proceed further</p>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        @if (activeStep() > 0) {
+            <button class="prev-button" (click)="prevStep()">
+                <i class="pi pi-arrow-left"></i>
+            </button>
+        }
+        @if (activeStep() < steps.length - 1) {
+            <button class="next-button" icon="pi pi-arrow-right" (click)="nextStep()">
+                <i class="pi pi-arrow-right"></i>
+            </button>
+        }
+    </div>
+</div>

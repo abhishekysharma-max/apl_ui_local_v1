@@ -1,0 +1,15 @@
+<div class="side-card-container">
+    <div class="side-header">
+        <img class="icon" src="../../../../assets/CreateTemplate.png" alt=""/>
+        <span class="title">Create form templates</span>
+        <button class="close-button" (click)="onClose()">+</button>
+    </div>
+    <div class="side-list">
+        @for (item of items; track $index) {
+            <button class="template-list">
+                <span class="fl">{{item}}</span> 
+                <span class="fr">...</span>
+            </button>
+        }
+    </div>
+</div>

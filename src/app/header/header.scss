@@ -1,0 +1,27 @@
+.header-logo {
+    display: flex;
+    height: 17px;
+}
+
+.crumbs {
+    display: flex;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    position: static;
+}
+
+.bread-crumbs {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.right-tools {
+    display: flex;
+    gap: 12px;
+}

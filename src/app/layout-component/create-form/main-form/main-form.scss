@@ -1,0 +1,130 @@
+.main-container {
+    background-color: white;
+    border-radius: 15px;
+    margin: 16px;
+    text-align: center;
+    padding: 16px;
+}
+
+.form-stepper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-wrapper {
+    font-size: 11px;
+    display: flex;
+    gap: 3px;
+}
+
+.step-circle {
+    color: #ABB7C2;
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    border: 1px solid #abb7c2ea;
+}
+
+.step-circle.active {
+    border: none;
+    background-color: #495AFF;
+    color: white;
+}
+
+.step-label {
+    color: #ABB7C2;
+}
+
+.step-label.active {
+    color: #495AFF;
+}
+
+.step-line {
+    height: 1px;
+    width: 68px;
+    color: #ABB7C2;
+    border: 1px solid;
+    margin-top: 8px;
+}
+
+.step-line.active {
+    color: #495AFF;
+}
+
+.form-title {
+    background: linear-gradient(90deg, #0A7DAA 0%, #5B59A7 25%, #813C97 50%, #A93177 75%, #BC3966 100%);
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.type-cards {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.card {
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 12px;
+    height: 92px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.card.selected {
+    border: 2px solid transparent;
+    background: linear-gradient(#fff, #fff) padding-box,
+     linear-gradient(180deg, #495AFF 0%, #BC3966 100%) border-box;
+
+
+}
+
+.card-image {
+    width: 38px;
+}
+
+.card-text {
+    margin-top: 8px;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    margin: 44px 16px;
+    color: #929292;
+    flex-direction: column;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 6px;
+    margin-top: 36px;
+    justify-content: center;
+}
+
+.next-button {
+    height: 28px;
+    width: 28px;
+    background-color: var(--brand-red);
+    color: white;
+    border-radius: 14px;
+    border: none;
+}
+
+.prev-button {
+    height: 28px;
+    width: 28px;
+    background-color: #E8EAEE;
+    color: black;
+    border-radius: 14px;
+    border: none;
+}
+
+.hr-card {
+    margin-top: 36px;
+    opacity: 50%;
+}

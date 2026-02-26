@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: 'Calibri';
+}
+
+:root {
+    --brand-red: #BF3A62;
+    --brand-red-light: #c46581;
+    --primary-color: var(--brand-red);
+}
+
+button {
+    cursor: pointer;
+}
+
+.app-background {
+    background: linear-gradient(180deg, #FFF0F5 0%, #D5D3FF 100%);
+}
+
+.p-button.p-button-primary {
+    background-color: var(--brand-red);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+.p-button.p-button-primary:not(:disabled):hover {
+    background-color: var(--brand-red);
+    color: white;
+}
+
+.p-button.p-button-primary:disabled {
+    background-color: var(--brand-red-light);
+}
+
+.p-button.p-button-secondary {
+    background-color: white;
+    border: 1px solid var(--brand-red);
+    color: var(--brand-red);
+    padding: 6px 16px;
+    border-radius: 6px;
+}
+
+.p-button.p-button-secondary:not(:disabled):hover {
+    background-color: white;
+    border: 1px solid var(--brand-red);
+    color: var(--brand-red);
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

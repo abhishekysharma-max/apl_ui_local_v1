@@ -1,0 +1,41 @@
+<div class="login-container">
+    <div class="login-left">
+        <div class="login-card">
+            <!-- Logo -->
+        <div class="logo-section">
+            <img src="../../assets/logo.png" alt=""/>
+        </div>
+        <!-- Form -->
+         <div class="form-section">
+            <!-- Email -->
+            <div class="form-group">
+                <label for="Email">Email <span class="asterisk">*</span></label>
+                <input pInput type="text" name="Email" class="input-style"/>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group">
+                <label for="Password">Password <span class="asterisk">*</span></label>
+                <input pInput type="password" name="Password" class="input-style"/>
+            </div>
+
+            <!-- Remember and Forgot -->
+             <div class="form-options">
+                <div class="remember-me">
+                    <p-checkbox binary="true" class="login-check"></p-checkbox>
+                    <span>Remember Me</span>
+                </div>
+                <a class="forgotLink" href="">Forgot Password?</a>
+             </div>
+
+             <!-- Buttons -->
+              <button pButton label="Login With OTP" severity="primary"> </button>
+
+              <div class="divider">OR</div>
+
+              <button pButton label="Login With SSO" severity="secondary" > </button>
+         </div>
+        </div>
+    </div>
+    <div class="login-right"></div>
+</div>

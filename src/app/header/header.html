@@ -1,0 +1,13 @@
+<div class="header-container">
+ <div class="bread-crumbs">
+    <div class="logo header-logo">
+        <img src="../../assets/logo.png" alt="logo"/>
+    </div>
+    <div class="crumbs">{{breadCrumb}}</div>
+ </div>
+ <div class="page-title">{{title}}</div>
+ <div class="right-tools">
+    <button pButton label="Save as Template" severity="secondary"> </button>
+    <button pButton label="Submit" [disabled]="submitDisabled" severity="primary"> </button>
+ </div>
+</div>

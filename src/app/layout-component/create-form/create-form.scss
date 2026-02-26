@@ -1,0 +1,18 @@
+.create-form-container {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    height: 91vh;
+}
+
+app-side-card {
+    width: 300px;
+    flex-shrink: 0;
+    margin: 16px;
+}
+
+app-main-form {
+    flex: 1;
+    margin: 16px;
+}
+

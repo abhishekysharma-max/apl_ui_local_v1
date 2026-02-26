@@ -1,0 +1,42 @@
+.side-card-container {
+    background-color: white;
+    border-radius: 15px;
+    margin: 16px;
+    text-align: center;
+    padding: 16px;
+    height: 75vh;
+}
+
+.side-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon {
+    height: 21px;
+    width: 21px;
+}
+
+.close-button {
+    border: none;
+    background-color: white;
+    rotate: 45deg;
+    font-size: 25px;
+}
+
+.side-list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 11px;
+   margin-top: 24px;
+}
+
+.template-list {
+    border: none;
+    border-radius: 5px;
+    padding: 0px 16px;
+    width: 80%;
+    height: 36px;
+}
