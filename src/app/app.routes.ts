@@ -15,7 +15,13 @@ export const routes: Routes = [
             {
                 path: "create-form",
                 component: CreateForm
+            },
+            {
+                path: "home",
+                loadComponent: () => import('./layout-component/home/home')
+                    .then(m => m.Home)
             }
         ]
-    }
+    },
+
 ];

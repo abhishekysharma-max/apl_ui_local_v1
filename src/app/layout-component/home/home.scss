@@ -1,0 +1,125 @@
+.card-text {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0%;
+}
+
+::ng-deep .p-card-custom>.p-card-body {
+    padding: 0% !important;
+}
+
+.card-width {
+    width: 75%;
+    height: 90%;
+}
+
+.template-img {
+    border-radius: 10px;
+}
+
+.header-text {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.card-header {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 136%;
+    letter-spacing: 0%;
+}
+
+.card-subline {
+
+
+    color: var(--Text-Body-Light, #425466);
+    font-feature-settings: 'salt' on;
+    /* Text/Small/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+
+}
+
+.comments-card {
+    width: 95%;
+    box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+    box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
+}
+
+.badge-style {
+    border-radius: 50px;
+    background: rgba(129, 60, 151, 1);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.09px;
+}
+
+
+::ng-deep {
+    .custom-avatar-group {
+        .p-avatar {
+            background-color: #8e24aa !important;
+            color: #ffffff !important;
+            font-weight: bold;
+            border: 1px solid #e0e0e0;
+            width: 35px;
+            height: 35px;
+        }
+
+    }
+}
+
+::ng-deep .p-badge {
+    background-color: #f44336 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    bottom: 0px !important;
+    right: 5px !important;
+    top: 30px !important;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    outline-style: none !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+
+.avatar-0 .p-avatar {
+    background: rgba(129, 60, 151, 1) !important;
+}
+
+.avatar-1 .p-avatar {
+    background: rgba(191, 58, 98, 1) !important;
+}
+
+.avatar-2 .p-avatar {
+    background: rgba(76, 111, 255, 1) !important;
+}
+
+.avatar-3 .p-avatar {
+    background: rgba(53, 102, 177, 1) !important;
+}
+
+.more-options-color {
+    color: rgba(122, 122, 157, 1);
+}
+.p-card{
+    background-color: white;
+    border-radius: 10px;
+}

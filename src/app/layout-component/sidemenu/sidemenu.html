@@ -1,0 +1,18 @@
+<div class="bg">
+
+    <br><br>
+    <div class="flex flex-column mt-4">
+        @for(item of navItems; track item.id){
+            <div class="flex align-items-center justify-content-center m-2 icon-size">
+                @if(item.isSelected){
+
+                    <img src="{{item.activeIcon}}" alt="{{item.label}}" />
+                }
+                @else{
+                    <img src="{{item.defaultIcon}}" alt="{{item.label}}" (click)="selectNavItem(item.id)"/>
+                }
+               
+            </div>
+        }
+    </div>
+</div>
